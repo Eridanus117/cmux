@@ -68,7 +68,6 @@ extension CanvasRootView: CanvasPaneViewDelegate {
         guidesView.setGuides(result.guides)
         updateJoinHighlight(for: session, at: documentPoint)
         updateMinimap(reveal: true)
-        callbacks.onViewportGeometryChanged(window)
     }
 
     /// Live drop indicator: when this drag would join the dragged single-tab
